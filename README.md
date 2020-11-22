@@ -6,31 +6,34 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 ### Oversampling
 Naive Random Oversampling
 ![Random](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Naive%20Random%20Oversampling.PNG)
+![Random stats](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Naive%20Random%20Oversampling_stats.PNG)
 
 SMOTE Oversampling
 ![SMOTE](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/SMOTE%20Oversampling.PNG)
-
-Of the two oversampling alogrithms, Naive Random Oversampling produced the higher true positives but also higher false positives.  Of the two oversampling models, SMOTE with its higher accuracy of true vs false positives is the better model.
+![SMOTE stats](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/SMOTE%20Oversampling_stats.PNG)
 
 ### Undersampling
 ClusterCentroid
-
 ![Undersampling](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Undersampling.PNG)
-
-Undersampling produced the highest false positives so should not be considered.
-
+![Undersampling stats](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Undersampling_stats.PNG)
 
 ### Combination (Over and Under)
 SMOTEENN
 ![combination](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Combination.PNG)
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results. There is a bulleted list that describes the balanced accuracy score and the precision and recall scores of all six machine learning models (15 pt)
+![combination stats](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Combination_stats.PNG)
 
 ### Ensemble
 Balanced Random Forest Classifiers
 ![balanced forest](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Balanced%20Random%20Forest.PNG)
+![balanced forest stats](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Balanced%20Random%20Forest_stats.PNG)
 
 Easy Ensemble AdaBoost Classifiers
 ![easy ensemble](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Easy%20Ensemble%20AdaBoost.PNG)
+![easy ensemble stats](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Easy%20Ensemble%20AdaBoost_stats.PNG)
 
-## Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning. There is a summary of the results (2 pt)
-There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)
+*The SMOTEENN alogrithm performed the worst with an F1 score of .58.  The Easy Ensemble performed the best with an F1 score of .97
+*All algorithms has high presicion scores
+*Sensitivity is where the algorithms differed.  Only the ensemble algorithms have above .70 sensitivity scores.
+
+## Summary: 
+Easy Ensemble AdaBoost performed the best out of all the algorithms.  Going forward, the company should use the Easy Ensemble AdaBoost alogrithm for predictions on data.  Each score of significance was above .95.  The algorithm was head-and-shoulders above any other.
