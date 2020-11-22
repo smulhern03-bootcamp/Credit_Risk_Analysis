@@ -13,12 +13,10 @@ SMOTE Oversampling
 ![SMOTE stats](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/SMOTE%20Oversampling_stats.PNG)
 
 ### Undersampling
-ClusterCentroid
 ![Undersampling](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Undersampling.PNG)
 ![Undersampling stats](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Undersampling_stats.PNG)
 
 ### Combination (Over and Under)
-SMOTEENN
 ![combination](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Combination.PNG)
 ![combination stats](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Combination_stats.PNG)
 
@@ -31,9 +29,9 @@ Easy Ensemble AdaBoost Classifiers
 ![easy ensemble](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Easy%20Ensemble%20AdaBoost.PNG)
 ![easy ensemble stats](https://github.com/smulhern03-bootcamp/Credit_Risk_Analysis/blob/main/Images/Easy%20Ensemble%20AdaBoost_stats.PNG)
 
-*The SMOTEENN alogrithm performed the worst with an F1 score of .58.  The Easy Ensemble performed the best with an F1 score of .97
-*All algorithms has high presicion scores
-*Sensitivity is where the algorithms differed.  Only the ensemble algorithms have above .70 sensitivity scores.
+* The SMOTEENN alogrithm performed the worst with an F1 score of .58.  The Easy Ensemble performed the best with an F1 score of .97
+* All algorithms has high presicion scores
+* Sensitivity is where the algorithms differed.  Only the ensemble algorithms have above .70 sensitivity scores.
 
 ## Summary: 
 Easy Ensemble AdaBoost performed the best out of all the algorithms.  Going forward, the company should use the Easy Ensemble AdaBoost alogrithm for predictions on data.  Each score of significance was above .95.  The algorithm was head-and-shoulders above any other.
